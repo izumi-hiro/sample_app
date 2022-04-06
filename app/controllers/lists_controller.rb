@@ -9,7 +9,7 @@ class ListsController < ApplicationController
     redirect_to '/top'
   end
 
-  def index,
+  def index
     @lists = List.all
   end
 
