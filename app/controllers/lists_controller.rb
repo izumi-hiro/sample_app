@@ -27,6 +27,9 @@ class ListsController < ApplicationController
     redirect_to list_path(list.id)
   end
   
+  def destroy
+    
+  
   private
   def list_params
     params.require(:list).permit(:title, :body, :image)
